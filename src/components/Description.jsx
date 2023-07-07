@@ -34,8 +34,7 @@ const animationSkill = {
       duration: 0.6,
       type: 'tween',
       bounce: 0.2,
-      delay: 0.8,
-      staggerChildren: 0.9
+      delay: 0.4,
     }
   }
 }
@@ -78,7 +77,7 @@ const Description = (props,description) => {
       initial="hidden"
       animate={mainControls}
       />
-        <section ref={ref} className='flex px-[2rem] md:px-[7.5rem] py-[8rem] md:py-[5rem] flex-col items-start'>
+        <section className='flex px-[2rem] md:px-[7.5rem] py-[8rem] md:py-[5rem] flex-col items-start'>
             <div className='flex md:flex-col gap-20 md:gap-8 w-full flex-wrap'>
               <div className='flex flex-col lg:flex-row'>
                 <motion.h1 className='relative w-full lg:w-7/12 text-[3em] md:text-[4em] font-inter font-medium text-left md:pr-[10rem] text-white'
@@ -89,6 +88,7 @@ const Description = (props,description) => {
                   <span className='text-transparent bg-clip-text bg-gradient-to-br from-[#FFC700] to-[#FF7A00]'> ReactJS</span>
                 </motion.h1>
                 <motion.div className=' relative flex flex-col mt-2 md:mt-0 w-full lg:w-8/12 text-[0.8em] md:text-xl font-light text-justify leading-[1.25rem] md:leading-[2rem] font-inter text-white'
+                ref={ref}
                 variants={animation}
                 initial="hidden"
                 animate={mainControls}
