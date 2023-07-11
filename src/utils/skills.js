@@ -17,7 +17,7 @@ const skills = [
     },
     {
         "id":5,
-        "skill": "React.js"
+        "skill": "ReactJS"
     },
 ]
 export {skills}

@@ -49,7 +49,7 @@ const Banner = () => {
             />
           </h1>
         </motion.h2>
-        <a href={resume} target='_blank' rel="noreferrer"
+        <a href={resume} target='_blank' rel="noreferrer" className='mt-20 md:mt-0'
         
         >
           <motion.button className='text-white bg-gradient-to-br from-[#5200FF] to-[#3D00BD] rounded-3xl px-[1.75rem] py-[.75rem] font-inter font-light text-lg mt-4'

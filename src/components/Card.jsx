@@ -21,7 +21,7 @@ const Card = ({title,duration,point_1,point_2,tech,role,link,image}) => {
           <div className='mt-6 flex justify-between items-center mb-4 border-t-2 border-[
 #ffffff26]'>
             <div className='flex flex-col item-center justify-center md:flex-row my-4'>
-              <h1 className=' text-lg font-inter font-semibold'>Role: <span className='font-light font-inter'>Web Developer</span></h1>
+              <h1 className=' text-lg font-inter font-semibold'>Role: <span className='font-light font-inter'>{role}</span></h1>
             </div>
             <div className='flex item-center justify-center'>
               <button className='text-normal md:text-lg font-inter font-semibold' onClick={()=>openInNewTab(link)}>{`Link ->`}</button>
